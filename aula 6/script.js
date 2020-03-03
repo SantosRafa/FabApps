@@ -1,0 +1,14 @@
+var data = new Date();
+console.log(data);
+console.log(data.getHours());
+console.log(data.getMinutes());
+console.log(data.getSeconds());
+console.log(data.getMilliseconds());
+var data2 = new Date(Date.parse("March 10, 2020"));
+console.log( data.getDate());
+console.log( data.getDay());
+console.log( data.getFullYear);
+var dias = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta","Sabado"];
+console.log( data.getDate()+"/"+(data.getMonth()+1)+"/"+data.getFullYear()+ dias[data.getDay()]);
+console.log(data.setDate(data.getDate()+60));
+console.log(data);
